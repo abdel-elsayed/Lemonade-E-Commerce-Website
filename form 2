@@ -10,12 +10,14 @@
 		<p>
 		<label>Password: <input type = "Password"  placeholder= "Enter password" name="password" size ="10" maxlength="30"> </label>
 		</p>
-		jnjnjnjnjn
-		
-		
-		
-		
-		
+    
+    
+    
+		hiiiiiiiii
+    
+    
+    
+    
 		</fieldset>
 		<p align="center">
 		<input  type="submit" name="login" value="Login">
