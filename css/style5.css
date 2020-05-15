@@ -1,0 +1,161 @@
+@import "footer.css";
+
+
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+	float: left;
+}
+
+h1, .lemonade {
+	font-family: Snell Roundhand, cursive;
+	font-size: 25px;
+	margin-top: 3px;
+	margin-left: 33px;
+	color: black;
+	text-decoration: none;
+}
+
+.lemon {
+	width: 25px;
+	height: 25px;
+    margin-left: -5px;
+    margin-top: 4px;
+}
+
+.navBar {
+	width: 100%;
+	height: 45px;
+	background-color: white;
+	position: fixed; 
+	top: 0;
+    z-index: 1;
+	border-bottom: 0.5px solid rgba(38, 38, 38, 0.5);
+}
+
+ul {
+	position: absolute;
+	top: -15;
+	right: 50;
+	list-style: none;
+}
+
+.navBar li {
+	padding-top: 15px; 
+	display: inline-block;
+	margin-left: 40px;
+}
+
+
+.logout {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	background-color: #3498DB;
+	border-radius: 15px;
+	padding: 5px 5px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+
+.logout:hover {
+	background-color: white;
+	color: #3498DB;
+	padding: 3px 3px;
+	border: 2px solid #3498DB;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 90px;
+  margin-left: 8%;
+  position: relative;
+}
+
+.box {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background-color: white;
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.detailBox {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	display: none;
+}
+
+
+.container .box:hover .detailBox {
+	display: block;
+}
+
+.itemName {
+	font-family: Arial, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	margin-left: 20px;
+	margin-right: 105px;
+	margin-top: 20px;
+}
+
+.itemPrice {
+	font-family: Arial, sans-serif;
+	font-size: 25px;
+	color: white;
+	position: absolute;
+	left: 20;
+	bottom: 30;
+}
+
+.detailBox .fa-heart {
+	position: absolute;
+	left: 20;
+	bottom: 27;
+	color:  #DC143C;
+}
+
+.detailBox .amountLikes {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	color: white;
+	position: absolute;
+	left: 47;
+	bottom: 12;
+}
+
+.detailBox .fa-info {
+	position: absolute;
+	right: 20;
+	bottom: 27;
+	color: white;
+}
+
+.itemImage {
+  width: 350px;
+  height: 350px;
+  display: block;
+}
+
+.icon a {
+  background-color: transparent;
+}
+
+.fa-cart-plus {
+  position: absolute;
+  top: 20;
+  right: 20;
+}

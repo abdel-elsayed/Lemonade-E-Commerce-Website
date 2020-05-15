@@ -1,0 +1,235 @@
+@import "style5.css";
+
+body {
+  background-color: #f2f2f2;
+}
+
+.bags, .watches, .shoes, .profile {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  padding: 5px 5px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+.profile {
+	border: none;
+	border-bottom: 2px solid #3498DB;
+}
+
+.bags:hover, .watches:hover, .shoes:hover {
+	border: none;
+	border-bottom: 2px solid rgba(38, 38, 38, 0.5);
+}
+
+ul {
+  right: 67;
+}
+
+.wrapper {
+  height: 600px;
+}
+
+.card {
+  background-color: #FFFFFF;
+  width: 350px;
+  height: 420px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 100px;
+  text-align: left;
+  float: left;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+  border-radius: 20px;
+}
+
+.fa-moon-o {
+  position: relative;
+  top: -60;
+  left: 10;
+  color: #3498DB;
+}
+
+.profileIcon {
+  width: 100px;
+  height: 100px;
+  margin-left: 25%;
+}
+
+.table1 {
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.table1 a {
+  font-weight: bold;
+  color: #3498DB;
+  border: none;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.table1 tr {
+  width: 100%;
+  height: 0px;
+  background-color: transparent;
+}
+
+.name {
+  font-size: 25px;
+}
+
+.card2 {
+  background-color: white;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+  margin-top: 120px;
+  margin-left: 40%;
+  width: 750px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: auto;
+}
+
+.card2::-webkit-scrollbar {
+  display: none;
+}
+
+.total {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  margin-left: 81.5%;
+  margin-top: 25px;
+}
+
+.table2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  margin-top: 100px;
+}
+
+.table2, tr {
+  width: 100%;
+  height: 165px;
+  background-color: transparent;
+}
+
+.outter {
+  border-bottom: 0.5px solid rgba(38, 38, 38, 0.5);
+}
+
+.itemImg {
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+}
+
+.itemTitle {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin-right: 40%;
+}
+
+.fa-heart {
+  margin-top: 13px;
+  color: #DC143C;
+}
+
+.price {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.table3 {
+  width: 45%;
+  height: 5px;
+  margin-left: 185px;
+  margin-top: 40px;
+}
+
+.innerRow {
+  height: 10px;
+}
+
+.icon1 {
+  padding: 10px;
+}
+
+.icon1 a {
+  color: black;
+}
+
+.icon2 {
+  padding: 10px;
+}
+
+.icon2 a {
+  color: black;
+}
+
+.icon3 {
+  margin-top: 2px;
+  display: flex; 
+  flex-direction: row;
+}
+
+.icon3 a {
+  color: black;
+}
+
+.icon4 {
+  padding-left: 25px;
+}
+
+.updateForm {
+  margin-top: 11px;
+  display: flex; 
+  flex-direction: row;
+}
+
+.updateForm label {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+.icon5 {
+  padding-left: 40px;
+}
+
+.icon5 p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: -3px;
+}
+
+.amountLikes {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  float: right;
+}
+
+.emptyCart {
+  width: 250px;
+  height: 250px;
+  margin-left: 33%;
+}
+
+.emptyTitle {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color:  #606060;
+}
