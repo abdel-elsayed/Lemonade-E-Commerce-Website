@@ -5,8 +5,7 @@ This project was created with
 
 ## Login and Sign up
 ![](images/loginPageDemo.png)
-To access the website, users need a profile in order to use the services.
-In order to obtain a profile, 
+To access the website, users can either login or sign up.
 
 
 ## First time signed up
