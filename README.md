@@ -17,6 +17,3 @@ This project was created with
 
 ## Wishlist
 ![](images/profile2Demo.png)
-
-
-
