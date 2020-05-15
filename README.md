@@ -1,6 +1,14 @@
 # Php_Project
+This project is an E-commerce website that is created using PHP and MySQL  
+
+# Authors
+* [Warren Simpson](https://github.com/Warren28)
+* [Abdelrahman Elsayed](https://github.com/abdel-elsayed)
+* [Marko Hannallah](https://github.com/marconabil123)
+
+## Front Page
 ![](images/frontPageDemo.png)
-This project was created with                  
+This project is an E-commerce website that is created using PHP and MySQL                 
 
 
 ## Login and Sign up
