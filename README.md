@@ -1,25 +1,21 @@
 # Php_Project
 ![](images/frontPageDemo.png)
 This project was created with                  
-  
-  
-  
 
 
-
-# Login and Sign up
+## Login and Sign up
 ![](images/loginPageDemo.png)
 
 
-# First time signed up
+## First time signed up
 ![](images/profile1Demo.png)
 
 
-# Adding Items
+## Adding Items
 ![](images/bagsPageDemo.png)
 
 
-# Wishlist
+## Wishlist
 ![](images/profile2Demo.png)
 
 
