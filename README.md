@@ -1,6 +1,6 @@
 # Php_Project
 ![](images/frontPageDemo.png)
-This project
+This project was created with
 
 
 # Login and Sign up
