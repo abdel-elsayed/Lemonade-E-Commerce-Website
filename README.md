@@ -1,5 +1,6 @@
 # Php_Project
-This project is an E-commerce website that is created using PHP and MySQL  
+This project is an E-commerce website that recommends Eco-Friendly products and items\
+created using PHP and MySQL 
 
 # Authors
 * [Warren Simpson](https://github.com/Warren28)
