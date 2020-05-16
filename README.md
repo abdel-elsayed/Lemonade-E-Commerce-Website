@@ -16,7 +16,7 @@ This project is an E-commerce website that is created using PHP and MySQL
 To access the website, users can either login or sign up.
 
 
-## First time signed up
+## First time signed in
 ![](images/profile1Demo.png)
 
 
