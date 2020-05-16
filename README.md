@@ -19,7 +19,7 @@ Upon logging in, session variables are used to store the information of the user
 ## First time signed up
 ![](images/profile1Demo.png)
 On signing up, the user's information are stored in session variables 
-* and sent over to the database using prepared SQL statements to prevent SQL injection.
+and sent over to the database using prepared SQL statements to prevent SQL injection.
 
 ## Adding Items
 ![](images/bagsPageDemo.png)
