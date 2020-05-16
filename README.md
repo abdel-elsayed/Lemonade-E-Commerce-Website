@@ -1,5 +1,5 @@
 # Php_Project
-This project is an E-commerce website that recommends Eco-Friendly products and items\
+***Lemonade*** is an E-commerce website that recommends Eco-Friendly products and items\
 created using PHP and MySQL 
 
 # Authors
