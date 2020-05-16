@@ -34,4 +34,4 @@ Upon logging out, the wishlist items are stored in the database so it can be acc
 * Login/signup
 * Like/unlike items
 * Add/Delete from wishlist
-*Update personal infromation
+* Update personal infromation
