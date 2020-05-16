@@ -29,3 +29,6 @@ and sent over to the database using prepared SQL statements to prevent SQL injec
 ![](images/profile2Demo.png)
 Session variables are used to store the items in the wishlist as long as the user is logged in.
 Upon logging out, the wishlist items are stored in the database so it can be accessed later by the user when logged back in.
+
+## Function
+* Login/signup
