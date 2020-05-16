@@ -33,3 +33,4 @@ Upon logging out, the wishlist items are stored in the database so it can be acc
 ## Function
 * Login/signup
 * Like/unlike items
+* add
