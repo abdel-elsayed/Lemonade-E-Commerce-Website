@@ -34,14 +34,17 @@ if(!isset($_GET['subject']))
 					echo '<p> Username Already Exists</p>';
 				}elseif($_GET['error'] == "emailExists" ){
 					echo '<p> Email Already Exists </p>';
+				}elseif($_GET['error'] == "PasswordNotSecure" ){
+					echo '<p> Password is not secured enough!!! </p>';
 				}
+
 			} ?>
-			<form action="" method = "POST">   
+			<form action="" method = "POST">
 				<?php  if($_GET['subject']=="name") { ?>
-			
+
 				<input type = "text" name ="firstname" placeholder="<?php echo $_SESSION['firstname']?>" class ="inputBox" required>
 				<input type = "text" name ="lastname" placeholder="<?php echo $_SESSION['lastname']?>" class ="inputBox" required>
-				
+
 				<?php }  elseif($_GET['subject']=="username") { ?>
 				<input type = "text" name ="username" placeholder="<?php echo $_SESSION['username']?>" class ="inputBox">
 				<?php }  elseif($_GET['subject']=="email") { ?>
@@ -51,17 +54,24 @@ if(!isset($_GET['subject']))
 				<?php }  elseif($_GET['subject']=="password") { ?>
 				<input type = "password" name ="password" placeholder="Password" class ="inputBox">
 				<input type="password" name ="cpassword" placeholder="Confirm Password" class ="inputBox"  required>
+				<div class="pswrdText">
+					Requirements:<br>
+					-a minimum of 8 characters<br>
+					-at least one uppercase letter<br>
+					-at least one number (digit)<br>
+					-at least one of the following special characters !@#$%^&*-
+				</div>
 				<?php } ?>
 				<button type ="submit" name= "update" class="button">Confrim Update </button>
 				<hr>
 			</form>
-			
+
 			<form action="/project/php/profile.php" method = "POST">
 				<button type ="submit" name ="cancel" class="button"> Cancel </button>
 			</form>
 	</div>
 </body>
-</html> 
+</html>
 <?php  // form processing
 if (isset($_POST['update']))
 {
@@ -71,7 +81,7 @@ if (isset($_POST['update']))
 		  $data = htmlspecialchars($data);
 		  return $data;
 		}
-		
+
 
 	if ($_GET["subject"]=="name") // update name
 	{
@@ -88,17 +98,17 @@ if (isset($_POST['update']))
 
 	if ($_GET["subject"]=="username") // update username
 	{	$username=trim_input($_POST["username"]);
-		$stmt = $conn->prepare("SELECT username FROM users WHERE username=? LIMIT 1"); 
+		$stmt = $conn->prepare("SELECT username FROM users WHERE username=? LIMIT 1");
 		$stmt->bind_param('s', $username);
 		$stmt->execute();
 		$stmt->bind_result($username);
 		$stmt->store_result();
 		if($stmt->num_rows>0){   // check if username exists
-			
+
 			header("Location:update_profile.php?error=usernameTaken&subject=username");
 			exit();
 		}
-		
+
 		$sql = "UPDATE users SET username=? WHERE user_id= ? ";
 		$stmt = $conn->prepare($sql);
 		$stmt->bind_param('si',$username,$_SESSION["userId"]);
@@ -107,7 +117,7 @@ if (isset($_POST['update']))
 		header("Location:profile.php?update=success");
 		exit();
 	}
-	
+
 	if ($_GET["subject"]=="phone") // update phone number
 	{
 		$phone=trim_input($_POST["phone"]);
@@ -119,9 +129,9 @@ if (isset($_POST['update']))
 		header("Location:profile.php?update=success");
 		exit();
 	}
-	
+
 	if ($_GET["subject"]=="email") //update email
-	{	
+	{
 		$email=trim_input($_POST["email"]);
 		if (!filter_var($email, FILTER_VALIDATE_EMAIL)){ // to check for a valid email
 			header("Location:update_profile.php?error=InvalidEmail&subject=email");
@@ -141,6 +151,11 @@ if (isset($_POST['update']))
 	{
 		if ($_POST["password"] != $_POST["cpassword"]){ //confirm password
 				header("Location:update_profile.php?error=PasswordsDontMatch&subject=password"); // check for errors
+		}
+		if (!preg_match("/^(?=.*[!@#$%^&*-])(?=.*[0-9])(?=.*[A-Z]).{8,20}$/", $_POST["password"]))
+		{
+			header("Location:update_profile.php?error=PasswordNotSecure&subject=password");
+			exit();
 		}else{
 			$password=trim_input($_POST["password"]);
 			$sql = "UPDATE users SET password=? WHERE user_id= ? ";
